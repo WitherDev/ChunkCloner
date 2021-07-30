@@ -1,0 +1,10 @@
+name: ChunkCloner
+version: ${project.version}
+main: dev.wither.chunkcloner.ChunkCloner
+api-version: 1.17
+authors: [ Wither ]
+description: Every time you build, the action is cloned in a certain radius.
+website: wither.dev
+commands:
+  chunkchanger:
+    description: Command for the ChunkCloner plugin.
