@@ -40,12 +40,12 @@ public class BundleListener implements Listener {
             for (Location location : newLocations) {
 
                 location.getBlock().setType(event.getBlockPlaced().getType(), true);
-                //event.getPlayer().sendMessage("Loc: " + location.getBlockX() +  " - " + location.getBlockY() + " - " + location.getBlockZ());
+                event.getPlayer().sendMessage("Loc: " + location.getBlockX() +  " - " + location.getBlockY() + " - " + location.getBlockZ());
 
 
             }
 
-            event.getPlayer().sendMessage(ChatColor.GOLD + "You just placed " + newLocations.size() + " extra blocks!");
+            if (ChunkCloner.isMessageCC()) event.getPlayer().sendMessage(ChatColor.GOLD + "You just placed " + newLocations.size() + " extra blocks!");
         }
 
     }
@@ -64,7 +64,7 @@ public class BundleListener implements Listener {
 
             }
 
-            event.getPlayer().sendMessage(ChatColor.GOLD + "You just broke " + newLocations.size() + " extra blocks!");
+            if (ChunkCloner.isMessageCC()) event.getPlayer().sendMessage(ChatColor.GOLD + "You just broke " + newLocations.size() + " extra blocks!");
         }
 
     }
