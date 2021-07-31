@@ -6,5 +6,5 @@ authors: [ Wither ]
 description: Every time you build, the action is cloned in a certain radius.
 website: wither.dev
 commands:
-  chunkchanger:
+  chunkcloner:
     description: Command for the ChunkCloner plugin.
